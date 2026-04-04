@@ -1,0 +1,79 @@
+configuration {
+modi: "drun,run,window";
+show-icons: true;
+icon-theme: "Papirus";
+font: "JetBrainsMono Nerd Font 11";
+drun-display-format: "{name}";
+location: 0;
+disable-history: false;
+hide-scrollbar: true;
+display-drun: "Apps";
+display-run: "Run";
+display-window: "Windows";
+}
+
+* {
+  bg: #1e1e2e;
+  bg-alt: #313244;
+  fg: #cdd6f4;
+  selected: #89b4fa;
+  active: #a6e3a1;
+  urgent: #f38ba8;
+  }
+
+window {
+width: 30%;
+border: 2px;
+border-color: @selected;
+border-radius: 10px;
+background-color: @bg;
+}
+
+mainbox {
+background-color: @bg;
+}
+
+inputbar {
+padding: 8px;
+background-color: @bg-alt;
+text-color: @fg;
+}
+
+prompt {
+enabled: true;
+text-color: @selected;
+margin: 0px 5px 0px 0px;
+}
+
+entry {
+text-color: @fg;
+}
+
+listview {
+lines: 8;
+columns: 1;
+spacing: 5px;
+scrollbar: false;
+}
+
+element {
+padding: 6px;
+border-radius: 6px;
+background-color: @bg;
+text-color: @fg;
+}
+
+element selected {
+background-color: @selected;
+text-color: #1e1e2e;
+}
+
+element-icon {
+size: 20px;
+margin: 0px 8px 0px 0px;
+}
+
+element-text {
+vertical-align: 0.5;
+}
+
